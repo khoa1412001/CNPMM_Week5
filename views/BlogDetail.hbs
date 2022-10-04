@@ -1,0 +1,18 @@
+<a href="/">Home</a>
+<h1>{{blog.title}}</h1>
+<form action="delete/{{blog.id}}" method="POST">
+    <button>Xóa bài viết</button>
+</form>
+<br>
+<form action="/blog/form_blog/{{blog.id}}">
+    <button>Sửa bài viết</button>
+</form>
+<h2>{{blog.content}}</h1>
+<h3>Bình luận</h2>
+{{#each blog.comment}}
+      <p>{{this}}</p>
+{{/each}}
+<form action = 'add_comment/{{blog.id}}' method="POST" >
+    <input type="text" placeholder="Comment here" name="comment">
+    <button>Comment</button>
+</form>

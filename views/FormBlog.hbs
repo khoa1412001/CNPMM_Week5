@@ -1,0 +1,11 @@
+<p>{{name}}</p>
+<form action="/blog/{{action}}" method="POST">
+<p>Title</p>
+<input type="text"  style="height:50px;width:500px;" placeholder="Title here" name="title" value="{{blog.title}}">
+<br>
+<p>Content</p>
+<textarea type="text" cols="66" rows="40" placeholder="Content here" name="content">{{blog.content}}</textarea>
+<br>
+<br>
+<button type="submit">submit</button>
+</form>

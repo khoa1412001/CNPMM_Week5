@@ -1,0 +1,6 @@
+{{#each blogs}}
+      <a href='/blog/{{this.id}}' class={{this.id}}>{{this.title}}</p>
+{{/each}}
+<form action="/blog/form_blog">
+    <input type="submit" value="Add new blog" />
+</form>
